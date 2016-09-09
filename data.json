@@ -1,0 +1,104 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "The King",
+      "address": "3555 S. Ocean Drive",
+      "location": "Hollywood, FL",
+      "rate": 150
+    },
+    {
+      "id": 2,
+      "name": "Marker Sharker",
+      "address": "890 Palm Rd NE",
+      "location": "Palm Bay, FL",
+      "rate": 200
+    },
+    {
+      "id": 3,
+      "name": "Hayaat",
+      "address": "17, Gonzalvo Road",
+      "location": "Vasco Da Gama, Goa",
+      "rate": 175
+    },
+    {
+      "id": 4,
+      "name": "Raddison Blu",
+      "address": "Lane-26, 24Square",
+      "location": "San Jose, US",
+      "rate": 1050
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "email": "saurabhgupta.151@gmail.com",
+      "checkin": "24-07-2009",
+      "checkout": "01-08-2009",
+      "hotel_id": 2
+    },
+    {
+      "id": 2,
+      "email": "saurabhgupta.151@gmail.com",
+      "checkin": "01-01-1991",
+      "checkout": "03-01-1991",
+      "hotel_id": 2
+    },
+    {
+      "id": 3,
+      "email": "vikaspatidar@gmail.com",
+      "checkin": "25-09-2016",
+      "checkout": "31-10-2016",
+      "hotel_id": 4
+    },
+    {
+      "id": 4,
+      "email": "saa@g",
+      "checkin": "2016-09-05T18:30:00.000Z",
+      "checkout": "2016-09-06T18:30:00.000Z",
+      "hotel_id": 4
+    },
+    {
+      "id": 5,
+      "email": "s@a.com",
+      "checkin": "2016-09-14T18:30:00.000Z",
+      "checkout": "2016-09-13T18:30:00.000Z",
+      "hotel_id": 3
+    },
+    {
+      "id": 6,
+      "email": "ashi.test3@gmail.com",
+      "checkin": "2016-12-30T18:30:00.000Z",
+      "checkout": "2016-12-30T18:30:00.000Z",
+      "hotel_id": 3
+    },
+    {
+      "id": 7,
+      "email": "socialgotesting@gmail.com",
+      "checkin": "2016-12-30T18:30:00.000Z",
+      "checkout": "2016-12-30T18:30:00.000Z",
+      "hotel_id": 3
+    },
+    {
+      "id": 8,
+      "email": "inkhil@g.com",
+      "checkin": "2016-12-30T18:30:00.000Z",
+      "checkout": "2016-12-30T18:30:00.000Z",
+      "hotel_id": 2
+    },
+    {
+      "id": 9,
+      "email": "ashi.test3@gmail.com",
+      "checkin": "2016-12-30T18:30:00.000Z",
+      "checkout": "2016-12-30T18:30:00.000Z",
+      "hotel_id": 3
+    },
+    {
+      "id": 10,
+      "email": "ashi.test3@gmail.com",
+      "checkin": "2016-12-30T18:30:00.000Z",
+      "checkout": "2016-12-30T18:30:00.000Z",
+      "hotel_id": 4
+    }
+  ]
+}

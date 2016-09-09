@@ -1,0 +1,22 @@
+
+	<!--<div class="container" ng-controller="HotelController">
+		<div ng-include="'app/template/hotel.menu.tmpl.html'"></div>
+	</div>-->
+
+<div class="container"  ng-controller="HotelListController">
+<div ng-include="'app/template/hotel.menu.tmpl.html'"></div>
+<div class="row" ng-show="loaded==true">
+		<table class="table table-striped">
+			<tr><th>Name</th><th>Address</th><th>City/State</th><th>Action</th></tr>
+			<tr ng-repeat="hotel in hotelss">
+				<td>{{hotel.name}}</td>
+				<td>{{hotel.address}}</td>
+				<td>{{hotel.location}}</td>
+				<td><a href="#" ng-click="showHotelDetails(hotel)" > View Hotel</a></td>
+			</tr>
+		</table>
+	</div>
+
+
+	</div>
+

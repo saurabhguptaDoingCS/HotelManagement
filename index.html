@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+<meta charset="utf-8" name="viewport" content="width= device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/custom_style.css">
+<link rel="stylesheet" type="text/css" href="css/ExtraCss.css">
+ <script type="text/javascript" src= "js/jquery.js"></script>
+ <script type="text/javascript" src="js/bootstrap.js"></script>
+ <script type="text/javascript" src= "js/angular.min.js"></script>
+ <script type="text/javascript" src= "js/angular-route.js"></script>
+ <script type="text/javascript" src= "js/angular-cookies.js"></script>
+ <!-- Application specific  js files   First load service then controller because controller depends on the service-->
+ <script type="text/javascript" src="app/service/hotel.srv.js"></script>
+ <script type="text/javascript" src="app/directive/custom.drv.js"></script>
+ <script type="text/javascript" src= "app/controller/hotel.ctrl.v3.js"></script>
+ <script type="text/javascript" src="app/service/authenticate.srv.js"></script>
+ <script type="text/javascript" src= "app/config/main.cfg.js"></script>
+</head>
+<body ng-app="main_module"> <!-- module specified for angular compiler-->
+<!-- ng-view is router directive to show different views in a web app-->
+
+<nav class="navbar navbar-inverse" ng-controller="HeaderController">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hotel Booking Application</a>
+    </div>
+    <ul class="nav navbar-nav">
+     
+      <li  ng-class="{active:isActive('/hotels')}"><a href="#/hotels">Hotel Search</a></li>
+      <li ng-class="{active:isActive('/reservations')}"><a href="#/reservations">View Reservations</a></li> 
+    
+    </ul>
+  </div>
+</nav>
+
+<div ng-view>
+</div>
+
+
+<!-- // active implementaion without Angular JS
+<script type="text/javascript">
+	$('li>a').click(function(){
+		$('li').removeClass();
+		$(this).parent().addClass('active');
+	});
+</script>
+-->
+
+</body>
+</html>

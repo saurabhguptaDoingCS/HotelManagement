@@ -1,0 +1,21 @@
+<div>
+	<div class="container" ng-controller="HotelMenuController">
+		
+	</div>
+
+<div class="container" ng-controller="HotelListController">
+<div class="row" >
+		<table class="table table-striped">
+			<tr><th class="info" colspan=4 align="center">Hotel Reservation Details</tr>
+			<tr ><th>Hotel</th><th>Email</th><th>Check-in Date</th><th>Check-out Date</th></tr>
+			<tr ng-repeat="reservation in reservations">
+				<td>{{reservation.hotel_name}}</td>
+				<td>{{reservation.email}}</td>
+				<td>{{reservation.checkin}}</td>
+				<td>{{reservation.checkout}}</td>
+			</tr>
+		</table>
+	</div>
+	</div>
+
+</div>

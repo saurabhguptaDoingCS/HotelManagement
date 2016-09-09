@@ -1,0 +1,13 @@
+	<div class="card">
+		<div class="cardHeader">
+			{{first}} {{second}}
+			<a href="#" class ="pull-right cardClose" ng-click="delete(item)"> &times;</a>
+		</div>
+		<div class="cardBody">
+		<img ng-src="images/{{pic}}.png" class="cardImage pull-left"/>
+			{{info}}
+			<a href="#/customer_orders/{{item.id}}">View Orders</a>
+			<a href="#"   class="glyphicon glyphicon-edit pull-right">
+			</a>
+		</div>
+	</div>

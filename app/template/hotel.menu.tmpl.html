@@ -1,0 +1,43 @@
+<div class="container">
+  <div class= "col-md-8">
+  <table class="table table-bordered">
+    <tr class="info">
+      <td class="info">
+		  			<h4 class="info">Hotel Search</h4>
+          </td>
+    </tr>
+    <tr><td>
+  <form ng-submit="getHotelDetails(searchText,numResults)">
+  <div class="form-group"  >
+
+    <label for="search">Search:</label>
+    <input ng-model="searchText" type="text"  class="form-control" id="searchText" required>
+  </div>
+  <div class="form-group">
+  <label  for="pwd">Maximum results to display:</label>
+  <input ng-model="numResults" type="text" class="form-control" list="results" required>
+  <datalist name="results" id="results">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+   <option value="6">5</option>
+    <option value="7">5</option>
+     <option value="8">5</option>
+      <option value="9">5</option>
+       <option value="10">5</option>
+</datalist>
+    
+    
+  </div>
+  
+  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+</form>
+</td></tr>
+</table>
+
+</div>
+
+            
